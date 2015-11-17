@@ -3,7 +3,7 @@
 class ItemsController extends AppController {
 
 	public $helpers = array('Html','Form','Session');
-	public $components = array('Session');
+	public $components = array('Session', 'Paginator');
 	public $uses = array('Item', 'Post', 'Category');
 
 
@@ -16,9 +16,13 @@ class ItemsController extends AppController {
 
 
 	public function index() {
-		$items = $this->Item->find('all', array('conditions' => array('status' => '0')));
+		// Itemにページネーションを使用
+		$this->paginate = array('Item' => array('limit' => 2, 'conditions' => array('status' => '0')));
+		$items = $this->Paginator->paginate('Item');
+		$this->set('items', $this->paginate());
+		// カテゴリー
 		$categories = $this->Category->find('all');
-		$this->set(compact('items', 'categories'));
+		$this->set(compact('categories'));
 	}
 
 
