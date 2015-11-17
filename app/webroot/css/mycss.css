@@ -12,16 +12,28 @@ ul {
 	background: green;
 }*/
 
+.message {
+	background-color: lightYellow;
+	border: 1px solid #E6DB55;
+	padding: 10px;
+	/*margin-bottom: 10px;*/
+}
+
+
+/**********************
+		Navber
+***********************/
+
 .navbar {
 	margin-bottom: 0px;
 	background: #d3d3d3;
 }
 
 .navbar-brand {
-  background: url("/Raiber/img/Raiber_logo.png") no-repeat left center;
-  background-size: contain;
-  height: 50px;
-  width: 250px;
+	background: url("/Raiber/img/Raiber_logo.png") no-repeat left center;
+	background-size: contain;
+	height: 50px;
+	width: 250px;
 }
 
 .navbar .username {
@@ -33,11 +45,16 @@ ul {
 	color: #000;
 }
 
-.message {
-	background-color: lightYellow;
-	border: 1px solid #E6DB55;
-	padding: 10px;
-	/*margin-bottom: 10px;*/
+.navbar-default .navbar-nav>li>a:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-login {
+	background: #ffa500;
+}
+
+.navbar-default .navbar-nav>li>.nav-login> a:hover {
+	background: #000;
 }
 
 /**********************
