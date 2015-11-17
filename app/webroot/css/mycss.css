@@ -1,0 +1,377 @@
+body {
+	padding-top: 51px;
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*#footer {
+	height: 200px;
+	background: green;
+}*/
+
+.navbar {
+	margin-bottom: 0px;
+	background: #d3d3d3;
+}
+
+.navbar-brand {
+  background: url("/Raiber/img/Raiber_logo.png") no-repeat left center;
+  background-size: contain;
+  height: 50px;
+  width: 250px;
+}
+
+.navbar .username {
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+}
+
+.message {
+	background-color: lightYellow;
+	border: 1px solid #E6DB55;
+	padding: 10px;
+	/*margin-bottom: 10px;*/
+}
+
+/**********************
+		Tables
+***********************/
+table {
+	border-right:0;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+table tr td {
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+
+td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+table td.actions a {
+	margin: 0px 6px;
+	padding: 2px 5px;
+}
+
+/**********************
+	  tops/index
+***********************/
+.one {
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+    height: 400px;
+    background: url(/Raiber/img/cebu.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.one h1 {
+	margin: 0;
+    padding-bottom: 150px;
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.one p {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.two {
+	margin-top: 20%;
+}
+
+.two-ja p {
+	font-size: 1.0em;
+	font-weight: 400;
+	text-align: center;
+	line-height: 40px;
+}
+
+.two-en {
+	margin-top: 30px;
+}
+
+.two-en p {
+	font-size: 1.3em;
+	text-align: center;
+	font-family: cursive, Helvetica, Arial, sans-serif;
+	letter-spacing: 0.15em;
+}
+
+.three {
+	width: 100%;
+	text-align: center;
+	margin-top: 15%;
+	padding-bottom: 6%;
+	background: #1e90ff;
+	overflow: hidden;
+}
+
+.three h2 {
+	font-size: 2.5em;
+	color: #ffff00;
+	padding: 5% 0px 0px 0px;
+}
+
+.three p {
+	font-size: 1.3em;
+	color: #fff;
+	padding-top: 3%;
+}
+
+.three li {
+	color: #f8f8ff;
+}
+
+.circle-base {
+	width: 30%;
+    margin: 0 auto;
+    margin-right: 45%;
+}
+
+.circle {
+	background: #33ccff;
+	font-size: 1.5em;
+	display: inline-block;
+    padding: 50%;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.circle-wrap {
+	padding-top: 5%;
+}
+
+.circle-discription li {
+	padding: 2% 0;
+	font-size: 1.1em;
+}
+
+.button-wrap {
+	text-align: center;
+	margin: 20% 0;
+}
+
+.button-wrap a:hover {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.7;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
+.button-enter {
+	font-size: 2em;
+	background: orange;
+	color: #f5f5f5;
+	padding: 5px 50px;
+	border-radius: 10px;
+}
+
+.button-enter,
+.button-enter::before,
+.button-enter::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.button-enter a {
+	display: inline-block;
+	padding: 5px 50px;
+}
+
+
+/*タブレット以上*/
+@media all and (min-width: 480px) {
+	.one {
+		width: 100%;
+		margin: 0 auto;
+		display: table;
+	    height: 600px;
+	    background: url(/Raiber/img/cebu.jpg) no-repeat center center scroll;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+
+	.one h1 {
+		margin: 0;
+	    padding-bottom: 208px;
+	    font-size: 4.5em;
+	    font-weight: 700;
+	    letter-spacing: 0.15em;
+	    display: table-cell;
+	    text-align: center;
+	    vertical-align: middle;
+	}
+
+	.two-ja p {
+		font-size: 1.3em;
+		font-weight: 500;
+		text-align: center;
+		line-height: 60px;
+	}
+
+	.two-en p {
+		font-size: 1.4em;
+		text-align: center;
+		line-height: 10px;
+		margin-top: 50px;
+		font-family: cursive, Helvetica, Arial, sans-serif;
+		letter-spacing: 0.15em;
+	}
+
+	.three h2 {
+		font-size: 3em;
+		color: #ffff00;
+		padding: 8% 0px 0px 0px;
+	}
+
+	.three p {
+		font-size: 1.5em;
+		color: #fff;
+		padding-top: 3%;
+	}
+
+	.circle-base {
+		width: 30%;
+	    margin: 0 auto;
+	    margin-right: 48%;
+	}
+
+	.button-enter {
+		font-size: 2.8em;
+		background: orange;
+	}
+
+	.button-wrap {
+		text-align: center;
+		margin: 10% 0;
+	}
+}
+
+/*PC以上*/
+@media all and (min-width: 992px) {
+	.circle-base {
+		width: 30%;
+	    margin: 0 auto;
+	    margin-right: 42%;
+	}
+}
+
+/**********************
+	  users/add
+***********************/
+.add-member-logo {
+	width: 35%;
+	border-bottom: 1px solid;
+}
+
+/**********************
+	  items/index
+***********************/
+.item-list img {
+	width: 320px;
+	height: 220px;
+}
+
+.item-title{
+	margin: 10px 0px;
+}
+
+.item-title a {
+	font-size: 1.6em;
+}
+
+.item-created {
+	margin-left: 20px;
+}
+
+.item-discription {
+	width: 100%;
+	word-wrap: break-word;
+	overflow: hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+.item-discription-xs {
+	width: 300px;
+	word-wrap: break-word;
+	overflow: hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+/**********************
+	  items/add
+***********************/
+.board-wrap {
+	margin-top: 60px;
+}
+
+/**********************
+	  items/add
+***********************/
+.add-itme-wrap p {
+	font-weight: 600;
+}
+
+/**********************
+	  items/edit
+***********************/
+.edit-itme-wrap p {
+	font-weight: 600;
+	float: left;
+}
+
+.edit-item-img {
+	padding-top: 30px;
+}
+
+.edit-item-img img {
+	width: 200px;
+	height: 120px;
+	margin: 0px 20px;
+}
+
+.item-float-clear {
+	padding-top: 30px;
+}
+
+.edit-item-img-detail img {
+	width: 300px;
+	height: 240px;
+}
+
